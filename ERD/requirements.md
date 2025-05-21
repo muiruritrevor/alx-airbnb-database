@@ -28,3 +28,4 @@ The ER diagram includes the following entities with their attributes:
 - **User to Review**: 1:N ("writes") - A user can write multiple reviews, but a review is written by one user.
 - **Property to Review**: 1:N ("receives") - A property can have multiple reviews, but a review is for one property.
 # Test update
+# Test update
