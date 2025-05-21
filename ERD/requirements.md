@@ -27,3 +27,4 @@ The ER diagram includes the following entities with their attributes:
 - **Booking to Payment**: 1:1 ("paid for") - A booking has one payment, and a payment is for one booking.
 - **User to Review**: 1:N ("writes") - A user can write multiple reviews, but a review is written by one user.
 - **Property to Review**: 1:N ("receives") - A property can have multiple reviews, but a review is for one property.
+# Test update
