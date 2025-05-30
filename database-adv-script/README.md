@@ -14,8 +14,11 @@ This documentation file, providing an overview and usage instructions.
 The airbnb database is structured in 3NF with the following key tables:
 
 -**User** (user_id, first_name, last_name, email, role, created_at): Stores user information (hosts, guests, admins).
+
 -**Property** (property_id, host_id, name, location, pricepernight): Stores property listings.
+
 -**Booking** (booking_id, property_id, user_id, start_date, end_date, total_price, status): Stores booking records.
+
 -**Review** (review_id, property_id, user_id, rating, comment): Stores property reviews.
 
 
