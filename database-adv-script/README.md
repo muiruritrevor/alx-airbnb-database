@@ -1,16 +1,20 @@
-### Airbnb Database - Advanced SQL Joins Queries
+## Airbnb Database - Advanced SQL Joins Queries
+
 This directory contains advanced SQL queries demonstrating various types of joins (INNER JOIN, LEFT JOIN, FULL OUTER JOIN) using the Airbnb database (airbnb). These queries are designed to master complex SQL operations, aligning with the objective of understanding and applying joins to retrieve and analyze data.
 
-###Directory Structure
+### Directory Structure
 
 #### File: joins_queries.sql
-Contains SQL queries showcasing different join types applied to the airbnb database tables (User, Booking, Property, Review).
+
+    Contains SQL queries showcasing different join types applied to the airbnb database tables (User, Booking, Property, Review).
 
 #### File: README.md
-This documentation file, providing an overview and usage instructions.
+
+    This documentation file, providing an overview and usage instructions.
 
 
 ### Database Context
+
 The airbnb database is structured in 3NF with the following key tables:
 
 -**User** (user_id, first_name, last_name, email, role, created_at): Stores user information (hosts, guests, admins).
