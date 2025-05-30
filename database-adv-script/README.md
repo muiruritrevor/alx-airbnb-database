@@ -6,11 +6,11 @@ This directory contains advanced SQL queries demonstrating various types of join
 
 #### File: joins_queries.sql
 
-    Contains SQL queries showcasing different join types applied to the airbnb database tables (User, Booking, Property, Review).
+  Contains SQL queries showcasing different join types applied to the airbnb database tables (User, Booking, Property, Review).
 
 #### File: README.md
 
-    This documentation file, providing an overview and usage instructions.
+  This documentation file, providing an overview and usage instructions.
 
 
 ### Database Context
