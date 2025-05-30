@@ -7,7 +7,8 @@ SELECT
     b.status,
     u.first_name,
     u.last_name
-FROM Booking b INNER JOIN User u ON b.user_id = u.user_id;
+FROM Booking b 
+INNER JOIN User u ON b.user_id = u.user_id;
 
 -- A LEFT JOIN to retrieve all properties and their reviews, including properties that have no reviews. 
  SELECT
@@ -15,8 +16,11 @@ FROM Booking b INNER JOIN User u ON b.user_id = u.user_id;
     p.description,
     p.location,
     r.rating,
-    r.comment
-FROM Property p LEFT JOIN Review r ON p.property_id = r.property_id;
+    r.comment,
+    r.created_at
+FROM Property p 
+LEFT JOIN Review r ON p.property_id = r.property_id
+ODER BY r.cereated_at DESC;
 
 -- A FULL OUTER JOIN to retrieve all users and all bookings, even if the user has no booking or a booking is not linked to a user.
 SELECT 
@@ -28,7 +32,8 @@ SELECT
     b.end_date,
     b.total_price,
     b.status
-FROM User u LEFT JOIN Booking b ON u.user_id = b.user_id
+FROM User u 
+LEFT JOIN Booking b ON u.user_id = b.user_id
 
 UNION
 
@@ -41,6 +46,7 @@ SELECT
     b.end_date, 
     b.total_price, 
     b.status 
-FROM User u RIGHT JOIN Booking b ON u.user_id = b.user_id;
+FROM User u 
+RIGHT JOIN Booking b ON u.user_id = b.user_id;
 
 
