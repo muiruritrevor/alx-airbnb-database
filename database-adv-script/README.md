@@ -29,13 +29,13 @@ The airbnb database is structured in 3NF with the following key tables:
 ## Queries Overview
 The joins_queries.sql file includes three queries:
 
--**INNER JOIN:** Retrieves all bookings and the users who made them, showing booking details (booking_id, start_date, total_price, status) and user info (first_name, last_name, email).
+**INNER JOIN:** Retrieves all bookings and the users who made them, showing booking details (booking_id, start_date, total_price, status) and user info (first_name, last_name, email).
 
--**LEFT JOIN:** Retrieves all properties and their reviews, including properties without reviews, displaying property details (property_id, name, location) and review details (rating, comment) or NULL if no reviews exist.
+**LEFT JOIN:** Retrieves all properties and their reviews, including properties without reviews, displaying property details (property_id, name, location) and review details (rating, comment) or NULL if no reviews exist.
 
--**FULL OUTER JOIN:** Retrieves all users and all bookings, including users without bookings and bookings without users (simulated using LEFT JOIN + RIGHT JOIN + UNION due to MySQL’s lack of native FULL OUTER JOIN), with NULL for non-matching rows.
+**FULL OUTER JOIN:** Retrieves all users and all bookings, including users without bookings and bookings without users (simulated using LEFT JOIN + RIGHT JOIN + UNION due to MySQL’s lack of native FULL OUTER JOIN), with NULL for non-matching rows.
 
-### Usage
+## Usage
 
 Set Up the Database:
 
