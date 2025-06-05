@@ -22,3 +22,15 @@ FROM Property p
 LEFT JOIN Booking b ON p.property_id = b.property_id
 GROUP BY p.property_id, p.name, p.location
 ORDER BY property_rank, p.property_id;
+
+-- window function using (ROW_NUMBER)
+SELECT 
+    p.property_id,
+    p.name AS property_name,
+    p.location,
+    COUNT(b.booking_id) AS booking_count,
+    ROW_NUMBER() OVER (ORDER BY COUNT(b.booking_id) DESC, p.property_id) AS property_rank
+FROM Property p
+LEFT JOIN Booking b ON p.property_id = b.property_id
+GROUP BY p.property_id, p.name, p.location
+ORDER BY property_rank;
